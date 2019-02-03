@@ -6,8 +6,7 @@ if([System.IO.Directory]::Exists($originalLocation)){
     {
         $fileNameWithoutPath = [System.IO.Path]::GetFileName($file)
         $newFileNameWithFullPath = "$copyToLocation\$fileNameWithoutPath"
-        [System.IO.File]::Move($file, $newFileNameWithFullPath)
+        [System.IO.File]::Move($file, $newFileNameWithFullPath)     
 
-    }
-     
+    }     
 }
